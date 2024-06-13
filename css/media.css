@@ -1,0 +1,187 @@
+
+@media (max-width: 968px){
+
+    .text-contacts {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    figcaption {
+      font-size: 3vw;
+    }
+    #gallery {
+      grid-template-columns: 1fr;
+      width: 90vw;
+    }
+  }
+  @media only screen and (min-width: 1048px) {
+    .cd-gallery {
+      margin: 2.5em auto;
+    }
+    .no-touch .cd-gallery > li:hover .cd-dots li.selected a {
+      /* Slider dots - change background-color of the selected dot when hover over the its parent list item */
+      background: #545456;
+      border-color: #898689;
+    }
+    .no-touch .cd-gallery > li:hover .cd-dots a {
+      /* Slider dots - change dot border-color when hover over the its parent list item */
+      border-color: #9688a0;
+    }
+    .no-touch .cd-gallery > li:hover li.move-right, .no-touch .cd-gallery > li:hover li.move-left {
+      /* show preview items when hover over the its parent list item */
+      opacity: 0.3;
+    }
+}
+@media only screen and (min-width: 1048px) {
+    .cd-item-wrapper li.focus-on-left {
+      /* class added to the .selected and .move-right items when user hovers over the .move-left item (item preview on the left) */
+      -webkit-transform: translateX(3%) scale(1.25);
+      -moz-transform: translateX(3%) scale(1.25);
+      -ms-transform: translateX(3%) scale(1.25);
+      -o-transform: translateX(3%) scale(1.25);
+      transform: translateX(3%) scale(1.25);
+    }
+    .cd-item-wrapper li.focus-on-left.move-right {
+      -webkit-transform: translateX(103%) scale(0.7);
+      -moz-transform: translateX(103%) scale(0.7);
+      -ms-transform: translateX(103%) scale(0.7);
+      -o-transform: translateX(103%) scale(0.7);
+      transform: translateX(103%) scale(0.7);
+    }
+    .cd-item-wrapper li.focus-on-right {
+      /* class added to the .selected and .move-left items when user hovers over the .move-right item (item preview on the right) */
+      -webkit-transform: translateX(-3%) scale(1.25);
+      -moz-transform: translateX(-3%) scale(1.25);
+      -ms-transform: translateX(-3%) scale(1.25);
+      -o-transform: translateX(-3%) scale(1.25);
+      transform: translateX(-3%) scale(1.25);
+    }
+    .cd-item-wrapper li.focus-on-right.move-left {
+      -webkit-transform: translateX(-103%) scale(0.7);
+      -moz-transform: translateX(-103%) scale(0.7);
+      -ms-transform: translateX(-103%) scale(0.7);
+      -o-transform: translateX(-103%) scale(0.7);
+      transform: translateX(-103%) scale(0.7);
+    }
+    .cd-item-wrapper li.hover {
+      /* class added to the preview items (.move-left or .move-right) when user hovers over them */
+      opacity: 1 !important;
+    }
+    .cd-item-wrapper li.hover.move-left {
+      -webkit-transform: translateX(-97%) scale(0.75);
+      -moz-transform: translateX(-97%) scale(0.75);
+      -ms-transform: translateX(-97%) scale(0.75);
+      -o-transform: translateX(-97%) scale(0.75);
+      transform: translateX(-97%) scale(0.75);
+    }
+    .cd-item-wrapper li.hover.move-right {
+      -webkit-transform: translateX(97%) scale(0.75);
+      -moz-transform: translateX(97%) scale(0.75);
+      -ms-transform: translateX(97%) scale(0.75);
+      -o-transform: translateX(97%) scale(0.75);
+      transform: translateX(97%) scale(0.75);
+    }
+  }
+  @media only screen and (min-width: 1048px) {
+    .cd-dots li {
+      pointer-events: auto;
+    }
+    .cd-dots li.selected a {
+      background: #fefdfd;
+      border-color: #fdfcfc;
+    }
+    .cd-dots a {
+      height: 8px;
+      width: 8px;
+      border-color: #faf8f8;
+      /* fix a bug in IE9/10 - transparent anchor not clickable */
+      background-color: rgba(245, 241, 241, 0);
+    }
+  
+  }
+ 
+  @media only screen and (max-width: 992px) {
+    .cd-item-info a, .cd-item-info .cd-price{
+      font-size: 24px;
+      line-height: 120%;
+    }
+    .cd-item-info{
+      margin-top: 15px;
+    }
+    .footerMap{
+      margin-top: 10px
+    }
+    .cd-item-wrapper{
+      margin: 40px 0
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cd-item-info , .cd-item-info .cd-price, .cd-item-info .cd-new-price {
+      font-size: 2.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .cd-item-info{
+      flex-wrap: wrap;
+      gap: 10px
+    }
+    .cd-item-info a{
+      width: 100%
+    }
+    .cd-item-wrapper li{
+      width: 60%;
+      left: 20%;
+    }
+    .footerMap {
+      max-width: none
+    }
+    .cd-item-wrapper{
+      margin: 35px 0
+    }
+    
+  }
+  @media only screen and (max-width: 576px) {
+    .cd-gallery .cd-gallery-item{
+      padding: 15px;
+    }
+    .cd-item-wrapper{
+      margin: 30px 0;
+    }
+    .cd-item-info{
+      gap: 5px;
+      margin-top: 5px
+    }
+    .container{
+      padding: 0 15px;
+    }
+    .cd-gallery{
+      gap: 10px;
+    }
+    .cd-gallery .cd-gallery-item{
+      width: calc(50% - 5px)
+    }
+    .cd-item-info a, .cd-item-info .cd-price{
+      font-size: 18px;
+    }
+    
+    header .social-block{
+      gap: 15px
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .cd-item-wrapper li{
+      width: 75%;
+      left: 13%;
+    }
+    .cd-item-wrapper{
+      margin: 20px 0 30px
+    }
+  }
+@media (max-width: 375px){
+    .headerEmail{
+        padding-right: 30px;
+    }
+}
